@@ -1,0 +1,21 @@
+header {
+    height: 60px;
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    border-bottom: solid black 2px;
+    margin-bottom: 30px;
+}
+footer {
+    height: 10px;
+    width: 100%;
+    border-top: solid black 1px;
+    font-size: 14px;
+    text-align: center;
+}
+fieldset {
+    border: none;
+}
+legend {
+    font-size: larger;
+    padding: 10px 0px 10px 0px;
+}

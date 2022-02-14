@@ -1,12 +1,23 @@
 
-function colorCircle() {
+function colorCircle(finalGrade) {
     /*if the GPA is 3.7 or above, display a green circle.
     If the GPA is 3.4 and above but less than 3.7, display a yellow circle.
     Otherwise display a red circle.*/
 
     // And how you can change its color:
-        document.getElementById("myCircle").style.display = "block";                                         
-        document.getElementById("myCircle").style.fill="green";
+        if (finalGrade>=3.7) {
+            document.getElementById("myCircle").style.display = "block";                                         
+            document.getElementById("myCircle").style.fill="green";
+        }
+        else if (finalGrade>=3.4) {
+            document.getElementById("myCircle").style.display = "block";                                         
+            document.getElementById("myCircle").style.fill="yellow";
+        }
+        else {
+            document.getElementById("myCircle").style.display = "block";                                         
+            document.getElementById("myCircle").style.fill="red";
+        }
+       
 }
 function clearCircle() {
     /*When the user clicks on the RESET button you should 
@@ -16,7 +27,9 @@ function clearCircle() {
     output GPA, clear the overall GPA and the last 
     30 credits GPA, reset all drop downs to empty 
     and the checkboxes to false, and then set focus 
-    to the IS202 drop down.*/
+    to the IS201 drop down.*/
+    document.getElementById("myCircle").style.display = "none";
+    document.getElementById('201Grade').autofocus=true
 }
 
 
@@ -42,8 +55,9 @@ The last 30 GPA credits is worth 20%
 
 //final function to pull all data and create the output(initially in an array)
 function displayTotal(gradeArray){
-    weightGrade(takeGrade(gradeArray));
-    return 
+    let finalGrade=weightGrade(takeGrade(gradeArray));
+    clearCircle(finalGrade);
+    return finalGrade
 }
 
 

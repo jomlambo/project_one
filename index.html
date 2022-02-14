@@ -10,7 +10,7 @@ Riley Marshall
 
 <!--Things I still need to do: 
     1. make outline for script that alerts when not all things are filled out.
-    2. name all the inputs and everything i think
+    2. name all the inputs and everything
     3. make sure all id's are unique
     4. add a URL to the business school 
     5. make calculation appear on page (and find out if it has to be a gpa or a percentage or what...)
@@ -27,7 +27,10 @@ Riley Marshall
     <script src="index.js"></script>
 </head>
 <header><h1>Marriot School of Business: Information Systems</h1></header>
-<body>
+<body><!--This fieldset contains all the dropdowns and checkboxes and buttons. Each 'select' has 
+        unique id name. 201 has autofocus, and we probably need to specify in the reset button function
+        something like document.getElementById('201Grade').autofocus=true...not sure if that will work but it's there. 
+        -->
     <fieldset>
         <legend>Calculate Potential</legend>
             <form action=""><span>Information Systems 201</span><br>
@@ -147,12 +150,14 @@ Riley Marshall
             <br>
             <input type="number" id="last30GPA" step=".05" min="0" max="4.0" value="0.00">
             <br><br>
-            <button onclick="displayTotal()">Calculate</button>
+            <button id="calculateButton" onclick="displayTotal()">Calculate</button>
             <br><br>
-            <button id="">Reset</button><br>
+            <button id="resetButton" onclick="clearCircle()">Reset</button><br>
             <svg height="100" width="100">
             <circle id="myCircle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green" display = "none"/></svg>
     </fieldset> 
+    <!--display final grade here:-->
+    <p id="finalGrade"></p>
     <p><strong>Program Overview</strong>
     <br><br>
     The BS Information Systems program is available as a four-year traditional 
@@ -181,7 +186,11 @@ Riley Marshall
     programming; telecommunications networking; 2-tier, 3-tier, 
     and n-tier application development; and web application 
     development.</p>
+<script>
 
+    displayTotal(gradeArray);
+    document.getElementById('finalGrade').innerHTML = 'yeet';
+</script>
 </body>
 <footer>Jefferson Lambert || Carter Denton || Cole Brunson || Riley Marshall</footer>
 </html>

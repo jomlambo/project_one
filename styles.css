@@ -16,6 +16,14 @@ fieldset {
     border: none;
 }
 legend {
-    font-size: larger;
+    font-size: x-large;
     padding: 10px 0px 10px 0px;
+    text-decoration: underline;
 }
+
+select {
+    width: 40px;
+    
+}
+
+

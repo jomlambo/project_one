@@ -1,22 +1,16 @@
-<!--riley marshall wooo-->
 
 <!-- 
-GROUP PROJECT 1
+GROUP PROJECT 1 (side work)
 Professor Hilton IS 303 W22
 
 Jefferson Lambert
-Coleman Brunson
-Carter Denton
-Riley Marshall
-Micah Wilwand
+
 -->
 
 <!--Things I still need to do: 
-    1. make outline for script that alerts when not all things are filled out.
-    2. name all the inputs and everything
-    3. make sure all id's are unique
-    4. add a URL to the business school 
-    5. make calculation appear on page (and find out if it has to be a gpa or a percentage or what...)
+    1. alerts when not all things are filled out.
+    2. add a URL to the business school 
+    3. pretty page
 -->
 
 <!DOCTYPE html>
@@ -30,138 +24,125 @@ Micah Wilwand
     <script src="index.js"></script>
 </head>
 <header><h1>Marriot School of Business: Information Systems</h1></header>
-<body><!--This fieldset contains all the dropdowns and checkboxes and buttons. Each 'select' has 
+<body id=''><!--This fieldset contains all the dropdowns and checkboxes and buttons. Each 'select' has 
         unique id name. 201 has autofocus, and we probably need to specify in the reset button function
         something like document.getElementById('201Grade').autofocus=true...not sure if that will work but it's there. 
         -->
-    <fieldset>
+    <fieldset id='fieldy'>
         <legend>Calculate Potential</legend>
             <form action=""><span>Information Systems 201</span><br>
-                <select onmouseleave="" name="grade" id="201Grade" autofocus>
-                    <option value="0">A</option>
-                    <option value="1">A-</option>
-                    <option value="2">B+</option>
-                    <option value="3">B</option>
-                    <option value="4">B-</option>
-                    <option value="5">C+</option>
-                    <option value="6">C</option>
-                    <option value="7">C-</option>
-                    <option value="8">D+</option>
-                    <option value="9">D</option>
-                    <option value="10">D-</option>
-                    <option value="11">F</option>
+                <select onmouseleave="" name="grade" id="0" autofocus>
+                    <option value='nada' disabled selected value style="display: none"></option>
+                    <option value="100">A</option>
+                    <option value="101">A-</option>
+                    <option value="102">B+</option>
+                    <option value="103">B</option>
+                    <option value="104">B-</option>
+                    <option value="105">C+</option>
+                    <option value="106">C</option>
+                    <option value="107">C-</option>
+                    <option value="108">D+</option>
+                    <option value="109">D</option>
+                    <option value="110">D-</option>
+                    <option value="111">F</option>
                 </select>
-                <span id="retake">Retake?</span><input id="retake201"type="checkbox" value="false">
+                <span id="retake">Retake?</span><input id="retake0"type="checkbox" value="false">
                 <br><br>
             </form>
             <form action=""><span>Information Systems 303</span><br>
-                <select name="grade" id="303Grade">
-                    <option value="0">A</option>
-                    <option value="1">A-</option>
-                    <option value="2">B+</option>
-                    <option value="3">B</option>
-                    <option value="4">B-</option>
-                    <option value="5">C+</option>
-                    <option value="6">C</option>
-                    <option value="7">C-</option>
-                    <option value="8">D+</option>
-                    <option value="9">D</option>
-                    <option value="10">D-</option>
-                    <option value="11">F</option>
+                <select name="grade" id="1">
+                    <option value='nada' disabled selected value style="display: none"></option>
+                    <option value="100">A</option>
+                    <option value="101">A-</option>
+                    <option value="102">B+</option>
+                    <option value="103">B</option>
+                    <option value="104">B-</option>
+                    <option value="105">C+</option>
+                    <option value="106">C</option>
+                    <option value="107">C-</option>
+                    <option value="108">D+</option>
+                    <option value="109">D</option>
+                    <option value="110">D-</option>
+                    <option value="111">F</option>
                 </select>
-                <span id="retake">Retake?</span><input id="retake303"type="checkbox" value="false">
+                <span id="retake">Retake?</span><input id="retake1"type="checkbox" value="false">
                 <br><br>
             </form>
             <form action=""><span>Accounting 200</span><br>
-                <select name="accGrade" id="accountingGrade">
-                    <option value="0">A</option>
-                    <option value="1">A-</option>
-                    <option value="2">B+</option>
-                    <option value="3">B</option>
-                    <option value="4">B-</option>
-                    <option value="5">C+</option>
-                    <option value="6">C</option>
-                    <option value="7">C-</option>
-                    <option value="8">D+</option>
-                    <option value="9">D</option>
-                    <option value="10">D-</option>
-                    <option value="11">F</option>
+                <select name="accGrade" id="2">
+                    <option value='nada' disabled selected value style="display: none"></option>
+                    <option value="100">A</option>
+                    <option value="101">A-</option>
+                    <option value="102">B+</option>
+                    <option value="103">B</option>
+                    <option value="104">B-</option>
+                    <option value="105">C+</option>
+                    <option value="106">C</option>
+                    <option value="107">C-</option>
+                    <option value="108">D+</option>
+                    <option value="109">D</option>
+                    <option value="110">D-</option>
+                    <option value="111">F</option>
                 </select>
-                <span id="retake">Retake?</span><input id="retakeAccounting"type="checkbox" value="false">
+                <span id="retake">Retake?</span><input id="retake2"type="checkbox" value="false">
                 <br><br>
             </form>
             <form action=""><span>Marketing 201</span><br>
-                <select name="grade" id="marketingGrade">
-                    <option value="0">A</option>
-                    <option value="1">A-</option>
-                    <option value="2">B+</option>
-                    <option value="3">B</option>
-                    <option value="4">B-</option>
-                    <option value="5">C+</option>
-                    <option value="6">C</option>
-                    <option value="7">C-</option>
-                    <option value="8">D+</option>
-                    <option value="9">D</option>
-                    <option value="10">D-</option>
-                    <option value="11">F</option>
+                <select name="grade" id="3">
+                    <option value='nada' disabled selected value style="display: none"></option>
+                    <option value="100">A</option>
+                    <option value="101">A-</option>
+                    <option value="102">B+</option>
+                    <option value="103">B</option>
+                    <option value="104">B-</option>
+                    <option value="105">C+</option>
+                    <option value="106">C</option>
+                    <option value="107">C-</option>
+                    <option value="108">D+</option>
+                    <option value="109">D</option>
+                    <option value="110">D-</option>
+                    <option value="111">F</option>
                 </select>
-                <span id="retake">Retake?</span><input id="retakeMarketing"type="checkbox" value="false">
-                <br><br>
-            </form>
-            <form action=""><span>Statistics 121</span><br>
-                <select name="grade" id="statsGrade">
-                    <option value="0">A</option>
-                    <option value="1">A-</option>
-                    <option value="2">B+</option>
-                    <option value="3">B</option>
-                    <option value="4">B-</option>
-                    <option value="5">C+</option>
-                    <option value="6">C</option>
-                    <option value="7">C-</option>
-                    <option value="8">D+</option>
-                    <option value="9">D</option>
-                    <option value="10">D-</option>
-                    <option value="11">F</option>
-                </select>
-                <span id="retake">Retake?</span><input id="retakeStats"type="checkbox" value="false">
+                <span id="retake">Retake?</span><input id="retake3"type="checkbox" value="false">
                 <br><br>
             </form>
             <form action=""><span>Finance 121</span><br>
-                <select name="grade" id="financeGrade">
-                    <option value="0">A</option>
-                    <option value="1">A-</option>
-                    <option value="2">B+</option>
-                    <option value="3">B</option>
-                    <option value="4">B-</option>
-                    <option value="5">C+</option>
-                    <option value="6">C</option>
-                    <option value="7">C-</option>
-                    <option value="8">D+</option>
-                    <option value="9">D</option>
-                    <option value="10">D-</option>
-                    <option value="11">F</option>
+                <select name="grade" id="4">
+                    <option value='nada' disabled selected value style="display: none"></option>
+                    <option value="100">A</option>
+                    <option value="101">A-</option>
+                    <option value="102">B+</option>
+                    <option value="103">B</option>
+                    <option value="104">B-</option>
+                    <option value="105">C+</option>
+                    <option value="106">C</option>
+                    <option value="107">C-</option>
+                    <option value="108">D+</option>
+                    <option value="109">D</option>
+                    <option value="110">D-</option>
+                    <option value="111">F</option>
                 </select>
-                <span id="retake">Retake?</span><input id="retakeFinance"type="checkbox" value="false">
+                <span id="retake">Retake?</span><input id="retake4"type="checkbox" value="false">
                 <br><br>
             </form>
             <br>
             <label for="">BYU Overall GPA</label>
             <br>
-            <input type="number" id="overallGPA"step=".05" min="0" max="4.0" value="0.00">
+            <input type="number" id="5"step=".05" min="0" max="4.0" value="0.00">
             <br><br>
             <label for="">BYU Last 30 Credits GPA</label>
             <br>
-            <input type="number" id="last30GPA" step=".05" min="0" max="4.0" value="0.00">
+            <input type="number" id="6" step=".05" min="0" max="4.0" value="0.00">
             <br><br>
-            <button id="calculateButton" onclick="displayTotal()">Calculate</button>
+            <button id="calculateButton" onclick="finalGrade(takeGrade())">Calculate</button>
             <br><br>
             <button id="resetButton" onclick="clearCircle()">Reset</button><br>
             <svg height="100" width="100">
             <circle id="myCircle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green" display = "none"/></svg>
     </fieldset> 
     <!--display final grade here:-->
-    <p id="finalGrade"></p>
-    <p><strong>Program Overview</strong>
+    <p id="finalGrade">Weighted likelihood of getting in: </p>
+    <p id="bodyb"><strong>Program Overview</strong>
     <br><br>
     The BS Information Systems program is available as a four-year traditional 
     degree or as a five-year integrated option where students earn
@@ -189,11 +170,6 @@ Micah Wilwand
     programming; telecommunications networking; 2-tier, 3-tier, 
     and n-tier application development; and web application 
     development.</p>
-<script>
-
-    displayTotal(gradeArray);
-    document.getElementById('finalGrade').innerHTML = 'yeet';
-</script>
 </body>
 <footer>Jefferson Lambert || Carter Denton || Cole Brunson || Riley Marshall</footer>
 </html>

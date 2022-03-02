@@ -2,8 +2,10 @@ header {
     height: 60px;
     width: 100%;
     padding: 2px 2px 2px 2px;
-    border-bottom: solid black 2px;
+    border-bottom: solid black 4px;
     margin-bottom: 30px;
+    position: relative;
+    text-align: center;
 }
 footer {
     height: 10px;
@@ -27,7 +29,25 @@ select {
 }
 
 body {
-    background-image: linear-gradient(rgb(169, 220, 250);
+    background-image: linear-gradient(rgb(181, 244, 255),rgb(188, 255, 188),rgb(255, 255, 185),rgb(255, 229, 182));
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 30px;
+    gap: 10px;
+    
+   border-image-width: auto;
+   align-content: center;
 }
 
 
+
+.grid-item {
+    text-align: center;
+    border-radius: 25px;
+    }
+
+.grid-item:hover{
+        transform: scale(1.2);
+    }

@@ -7,6 +7,7 @@ header {
     background: #14213d;
     color: #e5e5e5;
     border-style: solid double;
+    line-height: normal;
     
 }
 
@@ -24,6 +25,7 @@ footer {
 fieldset {
     border: none;
     background-color: #e5e5e5;
+    line-height: 1.5;
 }
 legend {
     font-size: x-large;
@@ -41,6 +43,8 @@ body {
     margin: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
+
+    line-height: 2.5;
 }
 
 h1 {
@@ -144,7 +148,7 @@ button:hover {
 
 .justify-text {
     text-align: justify;
-    margin: auto 30vw 10vh 30vw;
+    margin: auto 25vw 10vh 25vw;
 }
 
 .biggerP {

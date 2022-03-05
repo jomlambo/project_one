@@ -2,11 +2,11 @@ header {
     height: 80px;
     width: 100%;
     padding: 2px 2px 2px 2px;
-    border-bottom: solid black 4px;
     margin-bottom: 30px;
     position: relative;
     text-align: center;
-    background: rgba(9, 74, 238, 0.6);
+    background: rgba(68, 102, 255, 0.6);
+    border-style: solid double;
     
 }
 
@@ -57,3 +57,37 @@ body {
 .grid-item:hover{
         transform: scale(1.2);
     }
+
+.potentialTag{
+    text-align: center;
+    text-decoration: underline;
+    height: 50px;
+    font-size: 30px;
+    }
+
+.overviewTag{
+    text-align: center;
+    text-decoration: underline;
+    height: 70px;
+    font-size: 30px;
+}   
+
+.overviewText{
+    text-align: center;
+    font-size: 20px;
+    height: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.enterBelow{
+    text-align: center;
+    font-size: 20px;
+    height: 100px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.curriculumHeader{
+    text-align: center;
+    text-decoration: underline;
+    height: 20px;
+    font-size: 20px;
+}

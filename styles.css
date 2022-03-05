@@ -1,12 +1,17 @@
 header {
-    height: 60px;
+    height: 80px;
     width: 100%;
     padding: 2px 2px 2px 2px;
     border-bottom: solid black 4px;
     margin-bottom: 30px;
     position: relative;
     text-align: center;
+    background: rgba(9, 74, 238, 0.6);
+    
 }
+
+
+
 footer {
     height: 10px;
     width: 100%;
@@ -29,7 +34,8 @@ select {
 }
 
 body {
-    background-image: linear-gradient(rgb(181, 244, 255),rgb(188, 255, 188),rgb(255, 255, 185),rgb(255, 229, 182));
+    background-image: linear-gradient(rgb(71, 159, 241),rgb(161, 199, 255),rgb(255, 255, 255));
+    
 }
 .grid-container {
     display: grid;

@@ -70,11 +70,12 @@ button:hover {
 
 .backgroundImage {
     background-image: url("https://marriott.byu.edu/upload/news/images/1495-1801-42_119.jpg");
-    background-size: cover;
+    background-position: center;
     width: 100;
     height: 400px;
+    background-color: #000000;
+    text-align: center;
 }
-
 
 .grid-container {
     display: grid;

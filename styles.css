@@ -40,7 +40,8 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    margin: 30px;
+
+    margin: auto 30vw auto 30vw;
     gap: 10px;
     
    border-image-width: auto;

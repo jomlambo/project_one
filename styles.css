@@ -54,9 +54,6 @@ body {
     border-radius: 25px;
     }
 
-.grid-item:hover{
-        transform: scale(1.2);
-    }
 
 .potentialTag{
     text-align: center;
@@ -90,4 +87,27 @@ body {
     text-decoration: underline;
     height: 20px;
     font-size: 20px;
+}
+
+.selectBox:hover{
+    transform: scale(1.2);
+}
+
+.GPAGridContainer{
+    display: grid;
+    grid-template-columns: auto atuo;
+}
+
+.GPABoxesIndividual{
+    text-align: center;
+    height: 30px;
+}
+
+
+.GPAInputBox{
+    width: 50px;
+}
+
+.endButtons{
+    text-align: center;
 }

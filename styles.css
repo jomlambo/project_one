@@ -35,7 +35,7 @@ select {
 
 body {
     background-image: linear-gradient(rgb(71, 159, 241),rgb(161, 199, 255),rgb(255, 255, 255));
-    
+    margin: 0%;
 }
 .grid-container {
     display: grid;

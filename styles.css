@@ -1,6 +1,5 @@
 header {
     height: 80px;
-    width: 100%;
     padding: 2px 2px 2px 2px;
     margin-bottom: 30px;
     position: relative;
@@ -14,11 +13,12 @@ header {
 
 
 footer {
-    height: 10px;
-    width: 100%;
+    height: 20px;
     border-top: solid black 1px;
     font-size: 14px;
     text-align: center;
+    background-color: #ccc5b9;
+    padding: 40px;
 }
 fieldset {
     border: none;
@@ -37,6 +37,8 @@ select {
 body {
     background-color: #FFFCF2;
     margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
 }
 
 h1 {
@@ -53,10 +55,13 @@ h2 {
 button {
     background-color: #eb5e28;
     color: #FFFCF2;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: #b43f11;
+    
 }
 
 .grid-container {

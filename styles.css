@@ -1,10 +1,17 @@
 header {
-    height: 60px;
+    height: 80px;
     width: 100%;
     padding: 2px 2px 2px 2px;
-    border-bottom: solid black 2px;
     margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    background: rgba(68, 102, 255, 0.6);
+    border-style: solid double;
+    
 }
+
+
+
 footer {
     height: 10px;
     width: 100%;
@@ -26,7 +33,81 @@ select {
     
 }
 
-body{
-    background-image: linear-gradient(rgb(176, 246, 255)rgb(174, 250, 224)en, rgb(229, 243, 168), rgb(252, 243, 169));
+body {
+    background-image: linear-gradient(rgb(71, 159, 241),rgb(161, 199, 255),rgb(255, 255, 255));
+    margin: 0%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 30px;
+    gap: 10px;
+    
+   border-image-width: auto;
+   align-content: center;
 }
 
+
+
+.grid-item {
+    text-align: center;
+    border-radius: 25px;
+    }
+
+
+.potentialTag{
+    text-align: center;
+    text-decoration: underline;
+    height: 50px;
+    font-size: 30px;
+    }
+
+.overviewTag{
+    text-align: center;
+    text-decoration: underline;
+    height: 70px;
+    font-size: 30px;
+}   
+
+.overviewText{
+    text-align: center;
+    font-size: 20px;
+    height: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.enterBelow{
+    text-align: center;
+    font-size: 20px;
+    height: 100px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.curriculumHeader{
+    text-align: center;
+    text-decoration: underline;
+    height: 20px;
+    font-size: 20px;
+}
+
+.selectBox:hover{
+    transform: scale(1.2);
+}
+
+.GPAGridContainer{
+    display: grid;
+    grid-template-columns: auto atuo;
+}
+
+.GPABoxesIndividual{
+    text-align: center;
+    height: 30px;
+}
+
+
+.GPAInputBox{
+    width: 50px;
+}
+
+.endButtons{
+    text-align: center;
+}

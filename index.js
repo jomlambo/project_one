@@ -1,63 +1,125 @@
+//to do: create alert function fillInfo();
+// that can be applied for the alert function to be useful.
+//MUST add in the clearing of all boxes and reseting everything to A's to clearCircle()
+
+
+
 
 function colorCircle(finalGrade) {
-    /*if the GPA is 3.7 or above, display a green circle.
-    If the GPA is 3.4 and above but less than 3.7, display a yellow circle.
-    Otherwise display a red circle.*/
-
-    // And how you can change its color:
-        if (finalGrade>=3.7) {
-            document.getElementById("myCircle").style.display = "block";                                         
-            document.getElementById("myCircle").style.fill="green";
-        }
-        else if (finalGrade>=3.4) {
-            document.getElementById("myCircle").style.display = "block";                                         
-            document.getElementById("myCircle").style.fill="yellow";
-        }
-        else {
-            document.getElementById("myCircle").style.display = "block";                                         
-            document.getElementById("myCircle").style.fill="red";
-        }
-       
-}
-function clearCircle() {
-    /*When the user clicks on the RESET button you should 
-    call a JavaScript function called clearCircle() 
-    and clear the circle (style.display = "none" and 
-    style.fill = "none" for the element), clear the 
-    output GPA, clear the overall GPA and the last 
-    30 credits GPA, reset all drop downs to empty 
-    and the checkboxes to false, and then set focus 
-    to the IS201 drop down.*/
-    document.getElementById("myCircle").style.display = "none";
-    document.getElementById('201Grade').autofocus=true
-}
-
-
-//function to pull the value of all class grades (checkboxes) 
-// and put it into a decimal value (ordered in an array)
-function takeGrade(gradeArray) {
-
-    return gradeArray;
-}
-
-//function to take the various decimal values and put 
-//the weightings into the calculation (ordered in an array)
-function weightGrade(gradeArray) {
-/*
-IS 201 is worth 20%
-IS 303 or CS142 is worth 20%
-ACC 200, FIN 201, and MKTG 201 combined are worth 20%
-The overall GPA is worth 20%
-The last 30 GPA credits is worth 20%
-*/
-    return gradeArray;
-}
-
-//final function to pull all data and create the output(initially in an array)
-function displayTotal(gradeArray){
-    let finalGrade=weightGrade(takeGrade(gradeArray));
-    clearCircle(finalGrade);
-    return finalGrade
-}
-
-
+    //color the circle green for 3.7 or higher, yellow for 3.4 or higher, and red for any lower.
+         if (finalGrade>=3.7) {
+             document.getElementById("myCircle").style.display = "block";                                         
+             document.getElementById("myCircle").style.fill="green";
+         }
+         else if (finalGrade>=3.4) {
+             document.getElementById("myCircle").style.display = "block";                                         
+             document.getElementById("myCircle").style.fill="yellow";
+         }
+         else {
+             document.getElementById("myCircle").style.display = "block";                                         
+             document.getElementById("myCircle").style.fill="red";
+         }
+        
+ }
+ function clearCircle() {
+     //MUST add in the clearing of all boxes and reseting everything to A's
+     document.getElementById("myCircle").style.display = "none";
+     document.getElementById('0').autofocus=true;   
+     document.getElementById('finalGrade').style.display='none';
+     document.getElementById('1').reset();
+ }
+ 
+ //function to pull the value of all class grades (checkboxes) 
+ // and put it into a decimal value (ordered in an array)
+ function takeGrade() {
+     //array for holding the grades and gpa data
+     var decimals =[];
+     //for loop to go through each course and each retake box
+   
+ 
+     for(i=0;i<5;i++) {
+     //variable to pull value from each course AND to pull from retake id's .
+     //could make this better by changing course id's to 
+     //start with course and then the number.
+     let grade=parseInt(document.getElementById(i).value);
+     let retakeV=document.getElementById("retake"+i);
+     //if statement to check for retake
+         if (retakeV.checked === true){
+             grade+=1
+         }
+     //if statement to pull the grade from each class dropdown. 
+ 
+         if (document.getElementById(i).value === 'nada') {
+             alert("You must fill out every box.")
+             i=5;
+         }
+         else if (grade==100) {
+             decimals[i]=4;
+         }
+         else if (grade==101){
+             decimals[i]=3.7;
+         }
+         else if (grade==102){
+             decimals[i]=3.4;
+         }
+         else if (grade==103){
+             decimals[i]=3;
+         }
+         else if (grade==104){
+             decimals[i]=2.7;
+         }
+         else if (grade==105){
+             decimals[i]=2.4;
+         }
+         else if (grade==106){
+             decimals[i]=2;
+         }
+         else if (grade==107){
+             decimals[i]=1.7;
+         }
+         else if (grade==108){
+             decimals[i]=1.4;
+         }
+         else if (grade==109){
+             decimals[i]=1;
+         }
+         else if (grade==110){
+             decimals[i]=.7;
+         }
+         else {
+             decimals[i]=0;
+         }
+     }
+     if (document.getElementById(5).value != 0 || document.getElementById(6).value != 0) {
+     decimals.push(parseFloat(document.getElementById("5").value));
+     decimals.push(parseFloat(document.getElementById("6").value));
+     }
+     else if (i===6) {
+         decimals=[0]
+     }
+     else {
+         alert(" GPA must be higher than 0")
+         decimals=[0]
+ 
+     }
+     return decimals;
+ }
+ 
+ //function to take the various decimal values and put 
+ //the weightings into the calculation /put out the final score.
+ function finalGrade(gradeArray) {
+     let finalGrade=0;
+     finalGrade=((gradeArray[0]*.2)+(gradeArray[1]*.2)+(((gradeArray[2]
+     +gradeArray[3]+gradeArray[4])*.2)/3)
+     +((gradeArray[5])*.2)+(gradeArray[6])*.2); 
+     if (gradeArray[0] !== 0) {
+         colorCircle(finalGrade.toFixed(2));
+         document.getElementById("finalGrade").innerHTML = "Weighted likelihood of getting in: " + finalGrade.toFixed(2)
+         document.getElementById('finalGrade').style.display='block'
+     }
+     return finalGrade
+ }
+ 
+ 
+ 
+ 

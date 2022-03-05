@@ -11,8 +11,6 @@ header {
     
 }
 
-
-
 footer {
     height: 20px;
     border-top: solid black 1px;
@@ -69,6 +67,14 @@ button:hover {
     background-color: #d28202;
     
 }
+
+.backgroundImage {
+    background-image: url("https://marriott.byu.edu/upload/news/images/1495-1801-42_119.jpg");
+    background-size: cover;
+    width: 100;
+    height: 400px;
+}
+
 
 .grid-container {
     display: grid;

@@ -4,9 +4,10 @@ header {
     margin-bottom: 30px;
     position: relative;
     text-align: center;
-    background: #403d39;
-    color: #FFFCF2;
+    background: #14213d;
+    color: #e5e5e5;
     border-style: solid double;
+    line-height: normal;
     
 }
 
@@ -17,11 +18,14 @@ footer {
     border-top: solid black 1px;
     font-size: 14px;
     text-align: center;
-    background-color: #ccc5b9;
+    background-color: #e5e5e5;
+    color #000000;
     padding: 40px;
 }
 fieldset {
     border: none;
+    background-color: #e5e5e5;
+    line-height: 1.5;
 }
 legend {
     font-size: x-large;
@@ -35,10 +39,12 @@ select {
 }
 
 body {
-    background-color: #FFFCF2;
+    background-color: #ffffff;
     margin: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
+
+    line-height: 2.5;
 }
 
 h1 {
@@ -49,23 +55,19 @@ h1 {
 h2 {
     text-align: center;
     font-family: Avant Garde, Avantgarde, Century Gothic;
-    color: #252422;
+    color: #14213d;
 }
 
 button {
-    background-color: #eb5e28;
-    color: #FFFCF2;
+    background-color: #fca311;
+    color: #14213d;
     font-size: 18px;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #b43f11;
+    background-color: #d28202;
     
-}
-
-.backgroundImage {
-    background-image: url("https://marriott.byu.edu/upload/news/images/1495-1801-42_119.jpg");
 }
 
 .grid-container {
@@ -146,7 +148,7 @@ button:hover {
 
 .justify-text {
     text-align: justify;
-    margin: auto 30vw 10vh 30vw;
+    margin: auto 25vw 10vh 25vw;
 }
 
 .biggerP {

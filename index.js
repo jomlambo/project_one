@@ -17,8 +17,8 @@ function colorCircle(finalGrade) {
              document.getElementById("myCircle").style.display = "block";                                         
              document.getElementById("myCircle").style.fill="red";
          }
-        
  }
+
  function clearCircle() {
      //clears of all boxes and drop-downs and resets everything to blanks.
      //also sets focus to IS201
@@ -54,7 +54,7 @@ function colorCircle(finalGrade) {
      let retakeV=document.getElementById("retake"+i);
      //if statement to check for retake
          if (retakeV.checked === true){
-             grade+=1
+             grade+=1;
          }
 
      //if statement to pull the grade from each class dropdown. 
@@ -104,12 +104,11 @@ function colorCircle(finalGrade) {
      decimals.push(parseFloat(document.getElementById("6").value));
      }
      else if (i===6) {
-         decimals=[0]
+         decimals=[0];
      }
      else {
          alert(" GPA must be higher than 0")
-         decimals=[0]
- 
+         decimals=[0];
      }
      return decimals;
  }
@@ -123,8 +122,8 @@ function colorCircle(finalGrade) {
      +((gradeArray[5])*.2)+(gradeArray[6])*.2); 
      if (gradeArray[0] !== 0) {
          colorCircle(finalGrade.toFixed(2));
-         document.getElementById("finalGrade").innerHTML = "Weighted likelihood of getting into the program complete. Calculated GPA: " + finalGrade.toFixed(2)
-         document.getElementById('finalGrade').style.display='block'
+         document.getElementById("finalGrade").innerHTML = "Weighted likelihood of getting into the program complete. Calculated GPA: " + finalGrade.toFixed(2);
+         document.getElementById('finalGrade').style.display='block';
      }
      return finalGrade
  }

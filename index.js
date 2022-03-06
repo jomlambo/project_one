@@ -24,9 +24,9 @@ function colorCircle(finalGrade) {
         
  }
  function clearCircle() {
-     //clears of all boxes and drop-downs and resets everything to blanks
-     document.getElementById("myCircle").style.display = "none";
-     document.getElementById("0").autofocus=true;   
+     //clears of all boxes and drop-downs and resets everything to blanks.
+     //also sets focus to IS201
+     document.getElementById("myCircle").style.display = "none"; 
      document.getElementById("finalGrade").style.display='none';
      document.getElementById("0").value = "nada";
      document.getElementById("1").value = "nada";
@@ -40,6 +40,7 @@ function colorCircle(finalGrade) {
      document.getElementById("retake2").checked = false;
      document.getElementById("retake3").checked = false;
      document.getElementById("retake4").checked = false;
+     document.getElementById("0").focus();
  }
  
  //function to pull the value of all class grades (checkboxes) 

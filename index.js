@@ -2,8 +2,10 @@
 // that can be applied for the alert function to be useful.
 //MUST add in the clearing of all boxes and reseting everything to A's to clearCircle()
 
-
-
+//This function allows the button to link to the Marriott website
+function link() {
+    window.open("https://marriott.byu.edu/infosys/");
+}
 
 function colorCircle(finalGrade) {
     //color the circle green for 3.7 or higher, yellow for 3.4 or higher, and red for any lower.
@@ -27,6 +29,8 @@ function colorCircle(finalGrade) {
      document.getElementById('0').autofocus=true;   
      document.getElementById('finalGrade').style.display='none';
      document.getElementById('1').reset();
+     document.getElementById('retake2')
+
  }
  
  //function to pull the value of all class grades (checkboxes) 
@@ -35,7 +39,6 @@ function colorCircle(finalGrade) {
      //array for holding the grades and gpa data
      var decimals =[];
      //for loop to go through each course and each retake box
-   
  
      for(i=0;i<5;i++) {
      //variable to pull value from each course AND to pull from retake id's .
@@ -114,12 +117,8 @@ function colorCircle(finalGrade) {
      +((gradeArray[5])*.2)+(gradeArray[6])*.2); 
      if (gradeArray[0] !== 0) {
          colorCircle(finalGrade.toFixed(2));
-         document.getElementById("finalGrade").innerHTML = "Weighted likelihood of getting in: " + finalGrade.toFixed(2)
+         document.getElementById("finalGrade").innerHTML = "Weighted likelihood of getting into the program complete. Calculated GPA: " + finalGrade.toFixed(2)
          document.getElementById('finalGrade').style.display='block'
      }
      return finalGrade
  }
- 
- 
- 
- 

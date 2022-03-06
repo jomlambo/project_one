@@ -33,6 +33,8 @@ function colorCircle(finalGrade) {
      document.getElementById("2").value = "nada";
      document.getElementById("3").value = "nada";
      document.getElementById("4").value = "nada";
+     document.getElementById("5").value = "0.00";
+     document.getElementById("6").value = "0.00";
      document.getElementById("retake1").value = "false";
      document.getElementById("retake2").value = "false";
 

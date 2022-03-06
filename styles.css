@@ -8,7 +8,6 @@ header {
     color: #e5e5e5;
     border-style: solid double;
     line-height: normal;
-    
 }
 
 .link-button {
@@ -35,11 +34,13 @@ footer {
     color #000000;
     padding: 40px;
 }
+
 fieldset {
     border: none;
     background-color: #e5e5e5;
     line-height: 1.5;
 }
+
 legend {
     font-size: x-large;
     padding: 10px 0px 10px 0px;
@@ -107,13 +108,10 @@ button:hover {
    align-content: center;
 }
 
-
-
 .grid-item {
     text-align: center;
     border-radius: 25px;
     }
-
 
 .potentialTag{
     text-align: center;

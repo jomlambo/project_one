@@ -11,6 +11,21 @@ header {
     
 }
 
+.link-button {
+    float: right;
+    /* position: absolute; */
+    margin-right: 4px;
+    text-align: right;
+    /* display: inline; */
+    padding: 27px;
+    /* width: 10px; */
+    background-color: #e5e5e5;
+}
+
+.link-button:hover {
+    background-color: #a4a4a4;
+}
+
 footer {
     height: 20px;
     border-top: solid black 1px;
@@ -46,8 +61,12 @@ body {
 }
 
 h1 {
-
     font-family: Avant Garde, Avantgarde, Century Gothic;
+    /* text-align: center; */
+    position: relative;
+    display: inline-block;
+    /* width: 50%; */
+    /* padding-right: 0px; */
 }
 
 h2 {

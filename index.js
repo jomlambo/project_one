@@ -26,10 +26,15 @@ function colorCircle(finalGrade) {
  function clearCircle() {
      //MUST add in the clearing of all boxes and reseting everything to A's
      document.getElementById("myCircle").style.display = "none";
-     document.getElementById('0').autofocus=true;   
-     document.getElementById('finalGrade').style.display='none';
-     document.getElementById('1').reset();
-     document.getElementById('retake2')
+     document.getElementById("0").autofocus=true;   
+     document.getElementById("finalGrade").style.display='none';
+     document.getElementById("0").value = "nada";
+     document.getElementById("1").value = "nada";
+     document.getElementById("2").value = "nada";
+     document.getElementById("3").value = "nada";
+     document.getElementById("4").value = "nada";
+     document.getElementById("retake1").value = "false";
+     document.getElementById("retake2").value = "false";
 
  }
  

@@ -1,6 +1,6 @@
 //to do: create alert function fillInfo();
 // that can be applied for the alert function to be useful.
-//MUST add in the clearing of all boxes and reseting everything to A's to clearCircle()
+
 
 //This function allows the button to link to the Marriott website
 function link() {
@@ -24,7 +24,7 @@ function colorCircle(finalGrade) {
         
  }
  function clearCircle() {
-     //MUST add in the clearing of all boxes and reseting everything to A's
+     //clears of all boxes and drop-downs and resets everything to blanks
      document.getElementById("myCircle").style.display = "none";
      document.getElementById("0").autofocus=true;   
      document.getElementById("finalGrade").style.display='none';
@@ -35,9 +35,11 @@ function colorCircle(finalGrade) {
      document.getElementById("4").value = "nada";
      document.getElementById("5").value = "0.00";
      document.getElementById("6").value = "0.00";
-     document.getElementById("retake1").value = "false";
-     document.getElementById("retake2").value = "false";
-
+     document.getElementById("retake0").checked = false;
+     document.getElementById("retake1").checked = false;
+     document.getElementById("retake2").checked = false;
+     document.getElementById("retake3").checked = false;
+     document.getElementById("retake4").checked = false;
  }
  
  //function to pull the value of all class grades (checkboxes) 

@@ -1,9 +1,5 @@
-//to do: create alert function fillInfo();
-// that can be applied for the alert function to be useful.
-
-
-//This function allows the button to link to the Marriott website
 function link() {
+    //This function allows the button to link to the Marriott website
     window.open("https://marriott.byu.edu/infosys/");
 }
 
@@ -60,8 +56,8 @@ function colorCircle(finalGrade) {
          if (retakeV.checked === true){
              grade+=1
          }
+
      //if statement to pull the grade from each class dropdown. 
- 
          if (document.getElementById(i).value === 'nada') {
              alert("You must fill out every box.")
              i=5;
